@@ -11,7 +11,7 @@ lines(df$Date_t, df$Voltage, type="s")
 with(df, {plot(Date_t,Sub_metering_1,ylab="Energy Sub Metering" ,xlab="",type = "s")
   lines(Date_t,Sub_metering_2,type="s",col="red")
   lines(Date_t,Sub_metering_3,type="s",col="blue")})
-legend("topright", lty=1,col = c("black", "red","blue"), legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+legend("topright", lty=1,col = c("black", "red","blue"), legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),bty = "n")
 
 plot(df$Date_t, df$Global_reactive_power, type="n",ylab="Global_reactive_power" ,xlab="datetime") 
 lines(df$Date_t, df$Global_reactive_power, type="s") 
